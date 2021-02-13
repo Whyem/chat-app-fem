@@ -1,0 +1,93 @@
+.conversation__container{
+    background: $lightGrayishViolet;
+    padding: 0.875rem 0.625rem;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+}
+
+.message{
+    
+    >img{
+        border-radius: 15px;
+        width: 3.4375rem;
+        height: 3.4375rem;
+
+        &:not(:first-child){
+            margin-left: 0.625rem;
+        }
+    }
+
+    margin-bottom: 0.5625rem;
+    
+
+    &__text{
+        max-width: 24.5ch;
+        border-radius: 14px;
+        padding: 0.625rem;
+        
+        &.recieved{
+            color: $moderateViolet;
+            background: #EDE5F4;
+            border-bottom-left-radius: 4px;
+        }
+    
+        &.sent{
+            background: white;
+            color: $desaturatedDarkViolet;
+            border-bottom-right-radius: 4px;
+            box-shadow: $grayishBlue 2px 4px 7px 0px;
+        }
+    
+    }
+
+    &__link{
+        color: white;
+        cursor: pointer;
+        width: 13.3125rem;
+        background: linear-gradient(to right, $lightMagenta, $lightViolet);
+        border-radius: 14px;
+        border-bottom-left-radius: 4px;
+        padding: 0.8175rem 1.375rem 0.8175rem 0.625rem;
+
+        >i{
+            margin-right: 0.625rem;
+        }
+
+        >h3{
+            margin-left: auto;
+        }
+    }
+
+    &__input{
+        border-radius: 50px;
+        border: none;
+        padding: 0.625rem;
+        width: 100%;
+        font-family: inherit;
+        
+        &::placeholder{
+            color: $lightGrayishViolet;
+        }
+    }
+
+}
+
+.m2{
+    margin-bottom: 0.625rem;
+}
+
+.send_btn{
+    width: 1.875rem;
+    height: 1.875rem;
+    border: none;
+    background: $veryDarkDesaturatedViolet;
+    color: white;
+    border-radius: 50%;
+    margin-left: -2.1825rem;
+    cursor: pointer;
+    transition: all 400ms ease-in-out;
+
+    &:hover{
+        background: $lightViolet;
+    }
+}

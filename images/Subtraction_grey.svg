@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="561.001" height="940" viewBox="0 0 561.001 940">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#e942ff" stop-opacity="0.631"/>
+      <stop offset="1" stop-color="#8838ff"/>
+    </linearGradient>
+  </defs>
+  <path id="Subtraction_2" data-name="Subtraction 2" d="M3027.5,2107a337.925,337.925,0,0,1-67.615-6.817,333.66,333.66,0,0,1-119.966-50.482A338.386,338.386,0,0,1,2802,2019.916V1167h561v604.5a337.948,337.948,0,0,1-6.817,67.615,333.667,333.667,0,0,1-50.482,119.966,336.489,336.489,0,0,1-147.61,121.553,333.778,333.778,0,0,1-62.976,19.549A337.943,337.943,0,0,1,3027.5,2107Z" transform="translate(-2802 -1167)" fill="url(#linear-gradient)"/>
+</svg>

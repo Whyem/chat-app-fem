@@ -1,0 +1,59 @@
+.phone{
+    width: 20.9375rem;
+    background:$lightGrayishViolet;
+    border:0.75rem solid white;
+    border-radius: 40px;
+    position: relative;
+    box-shadow: $lightGrayishViolet 3px 9px 7px 0px;
+    margin-right: 12.1875rem;
+
+    @include breakpoint-down(){
+        margin: 0 auto;
+        margin-bottom: 3.75rem;
+        
+    }
+
+    &::before{
+        content: "";
+        background: white;
+        height: 30px;
+        border-bottom-left-radius: 18px;
+        border-bottom-right-radius: 18px;
+        width: 50%;
+        position: absolute;
+        margin-top: -1px;
+        transform: translateX(50%);
+        
+    }
+
+    &__header{
+        color: white;
+        border-top-left-radius: 28px;
+        border-top-right-radius: 28px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        background: linear-gradient(to left, $lightMagenta, $lightViolet);
+        padding: 2.375rem  1.1875rem  0.875rem  1.1875rem;
+    }
+
+}
+
+.avatar{
+    width: 2.125rem;
+    height: 2.125rem;
+    border-radius: 50%;
+    border: white 2px solid;
+    margin-right: .375rem;
+    margin-left: .375rem;
+
+    &__info{
+        > small {
+            color: $paleViolet;
+        }
+    }
+    
+}
+
+.last{
+    margin-left: auto;
+}

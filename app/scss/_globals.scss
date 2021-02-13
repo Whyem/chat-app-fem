@@ -1,0 +1,101 @@
+html{
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Rubik', sans-serif;
+    position: relative;
+    background-image: url("/images/Subtraction_grey.svg"), url("/images/Subtraction_grad.svg");
+    background-repeat: no-repeat;
+    background-position: bottom 131px left, top 131px right;
+
+    @include breakpoint-down(){
+        font-size: 0.75rem;
+        background-position: top -290px left -377px, bottom -290px right -252px;
+    }
+
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    @include breakpoint-down(){
+        display: block;
+    }
+}
+
+.wrapper{
+    
+    
+    @include breakpoint-up(){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    
+    @include breakpoint-down(){
+        display: block;
+        padding-top: 3.9375rem;
+        padding-bottom: 3.9375rem ;        
+    }
+}
+
+.flex{
+    display: flex;
+
+    &--jc{
+        justify-content: center;
+    }
+
+    &--jcfs{
+        justify-content: flex-start;
+    }
+
+    &--jcfe{
+        justify-content: flex-end;
+    }
+
+    &--jsb{
+        justify-content: space-between;
+    }
+
+    &--ai{
+        align-items: center;
+    }
+}
+
+
+
+h1, h2, p, small{
+    margin: 0;
+}
+
+h1{
+    font-size: 2.5rem;
+    color: $veryDarkDesaturatedViolet;
+    font-weight: 500;
+    margin-bottom: 1.625rem;
+}
+
+small{
+    font-size: 0.75rem;
+}
+
+h3{
+    font-size: inherit;
+    font-weight: 500;
+    margin: 0;
+}
+
